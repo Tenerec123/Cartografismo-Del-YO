@@ -3,10 +3,104 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh" content="0; url=./main.html">
+    <meta name="theme-color" content="#081114">
+    <meta name="description" content="Un laboratorio personal de lengua, memoria e identidad. Cartografía del yo de Álvaro.">
     <title>Cartografía del yo de Álvaro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <p>Abriendo el cuaderno… Si no redirige, <a href="./main.html">entra aquí</a>.</p>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="wordmark" href="index.html" aria-label="Cartografía del yo, inicio">
+          <span class="wordmark-mark" aria-hidden="true">C<span>·</span>Y</span>
+          <span class="wordmark-name">CUADERNO<br>DE CAMPO <span>01</span></span>
+        </a>
+        <div class="topbar-meta">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span>PROYECTO EN CONSTRUCCIÓN</span>
+          <span class="topbar-divider" aria-hidden="true"></span>
+          <span>ÁLVARO F. O.</span>
+        </div>
+        <a class="topbar-index" href="#archivo">ÍNDICE <span aria-hidden="true">↘</span></a>
+      </header>
+
+      <main>
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-copy">
+            <p class="eyebrow"><span>01</span> LENGUA COMO TERRITORIO</p>
+            <h1 id="page-title">Cartografía<br>del yo <span>de Álvaro.</span></h1>
+            <div class="hero-bottom">
+              <p class="hero-description">Un mapa personal hecho de palabras, recuerdos y preguntas. Ejercicios de lengua, a nuestra manera.</p>
+              <a class="scroll-cue" href="#archivo"><span class="scroll-line" aria-hidden="true"></span> EXPLORAR ARCHIVO</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="orbit orbit-outer"></div>
+            <div class="orbit orbit-middle"></div>
+            <div class="orbit orbit-inner"></div>
+            <div class="orbit-cross orbit-cross-horizontal"></div>
+            <div class="orbit-cross orbit-cross-vertical"></div>
+            <div class="orbit-core"><span>YO</span></div>
+            <span class="orbit-label orbit-label-top">LAT. 43° 15' N</span>
+            <span class="orbit-label orbit-label-right">PUNTO DE<br>ORIGEN</span>
+            <span class="orbit-label orbit-label-bottom">LONG. 2° 56' W</span>
+            <span class="orbit-spark orbit-spark-one"></span>
+            <span class="orbit-spark orbit-spark-two"></span>
+          </div>
+          <div class="hero-index" aria-hidden="true"><span>MAPA</span><span>00—01</span></div>
+        </section>
+
+        <section class="archive" id="archivo" aria-labelledby="archive-title">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow"><span>02</span> ARCHIVO DE EXPLORACIÓN</p>
+              <h2 id="archive-title">Puntos de partida<span>.</span></h2>
+            </div>
+            <p class="section-note">Cada página, una coordenada.<br>El recorrido está por comenzar.</p>
+          </div>
+
+          <div class="carousel" aria-roledescription="carrusel" aria-label="Páginas del cuaderno">
+            <div class="carousel-topline">
+              <span><span class="tiny-cross" aria-hidden="true">+</span> CUADERNO / 001—007</span>
+              <span class="carousel-counter" aria-live="polite" aria-atomic="true">01 <i>/</i> 07</span>
+            </div>
+
+            <div class="carousel-stage" data-carousel-stage>
+              <div class="carousel-track" data-carousel-track></div>
+              <span class="stage-mark stage-mark-left" aria-hidden="true">A</span>
+              <span class="stage-mark stage-mark-right" aria-hidden="true">N</span>
+            </div>
+
+            <div class="carousel-controls">
+              <p class="drag-hint"><span aria-hidden="true">←</span> ARRASTRA PARA RECORRER <span aria-hidden="true">→</span></p>
+              <div class="control-group">
+                <button class="carousel-button" type="button" data-previous aria-label="Página anterior">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m0 0 7-7m-7 7 7 7" /></svg>
+                </button>
+                <button class="carousel-button" type="button" data-toggle-rotation aria-label="Pausar rotación" aria-pressed="false">
+                  <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5v14M15 5v14" /></svg>
+                  <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7z" /></svg>
+                </button>
+                <button class="carousel-button" type="button" data-next aria-label="Página siguiente">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m0 0-7-7m7 7-7 7" /></svg>
+                </button>
+              </div>
+              <div class="carousel-progress" aria-hidden="true"><span data-progress></span></div>
+            </div>
+          </div>
+          <p class="archive-footnote"><span class="footnote-symbol" aria-hidden="true">↳</span> LAS PÁGINAS APARECEN EN BUCLE. EL MAPA NO TIENE BORDE.</p>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <span>UN PROYECTO PERSONAL DE <strong>ÁLVARO</strong></span>
+        <span class="footer-coordinates">43° 15' N&nbsp; / &nbsp;02° 56' W</span>
+        <span>HECHO DE PALABRAS <span class="footer-star" aria-hidden="true">✳</span> 2026</span>
+      </footer>
+    </div>
   </body>
 </html>
